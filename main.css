@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 550px;
+  margin: 20px auto;
+}
+h2 {
+  font-size: 40px;
+  margin: 5px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 6px;
+}
+.input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+}
+.input:focus {
+  outline: none;
+}
+.add {
+  border: none;
+  background-color: #1cb86a;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.delbtn {
+  background-color: red;
+  border: none;
+  font-weight: bold;
+  padding: 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Dark Mode  */
+.dark-mode-blue {
+  background-color: #071125;
+  color: white;
+}
+.dark-mode-black{
+  background-color: #1a1b1b;
+  color: white;
+}
+.dark-mode-black-task{
+  background-color: #1a1b1b;
+  color: #071125;
+}
+
+.dark-icon {
+  text-align: end;
+}
+.dark-icon svg {
+  width: 25px;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .container {
+    width: 330px;
+  }
+  .add {
+    padding: 15px 7px;
+    border-radius: 6px;
+    margin-left: 5px;
+  }
+  .delbtn {
+    padding: 15px 7px;
+    border-radius: 6px;
+    margin-left: 5px;
+  }
+  .input {
+    width: 115px;
+  }
+  .form {
+    padding: 20px 7px;
+  }
+}
